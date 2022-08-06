@@ -1,0 +1,35 @@
+/*accordion start*/
+.accordion {
+  position: relative;
+  width: 100%;
+}
+.accordion.active .accordion__description {
+  height: auto;
+  display: block;
+}
+
+.accordion.active .accordion__title::before {
+  transform: translateY(-50%) rotate(-45deg);
+  margin-top: 5px;
+}
+.accordion__title {
+  position: relative;
+}
+.accordion__title::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-top: 2px solid #817f6a;
+  border-right: 2px solid #817f6a;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  z-index: 1;
+  transform: translateY(-50%) rotate(135deg);
+}
+.accordion__description {
+  height: 0;
+  display: none;
+}
+/*accordion end*/

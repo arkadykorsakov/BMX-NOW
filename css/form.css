@@ -1,0 +1,120 @@
+/* form start */
+.form__item {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  position: relative;
+  left: 0;
+  top: 0;
+  background-color: rgba(42, 42, 41, 0.9);
+  border-radius: 32px;
+  border: 2px solid transparent;
+  outline: none;
+  font-size: 18px;
+  color: #817f6a;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px 25px;
+}
+
+.form__input:focus {
+  border-color: #ffc958;
+}
+
+.form__label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 20px 25px;
+  opacity: 0.3;
+  position: absolute;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #817f6a;
+}
+
+.form__label::after {
+  content: "*";
+  color: #ffc958;
+}
+.form__input:valid + .form__label {
+  opacity: 0;
+}
+.form__input:focus + .form__label {
+  opacity: 0;
+}
+
+.form__btn {
+  box-shadow: none;
+  width: 100%;
+  background: #ffc958;
+  padding: 22px 28px;
+  border-radius: 50px;
+}
+
+.form__input-select {
+  appearance: none;
+  position: relative;
+}
+.form__arrow {
+  position: absolute;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-top: 2px solid #ffc958;
+  border-right: 2px solid #ffc958;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  z-index: 1;
+  transform: translateY(-50%) rotate(135deg);
+}
+/* form end */
+
+/*form-quest start */
+.form-quest {
+  max-width: 860px;
+  width: 100%;
+  margin: 0 auto;
+}
+.form-quest__body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-quest__item {
+  position: relative;
+  width: 49%;
+  margin-bottom: 15px;
+}
+.form-quest__item-textarea {
+  width: 100%;
+}
+.form-quest__input-textarea {
+  min-height: 200px;
+  resize: vertical;
+}
+
+.form-quest__input {
+  height: 56px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 25px 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 767px) {
+  .form-quest__item {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+/*form-quest end */

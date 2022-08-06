@@ -1,0 +1,126 @@
+/* btn start */
+.btn {
+  background: #ffc958;
+  color: #222221;
+  display: inline-block;
+  padding: 18px 20px;
+  width: 240px;
+  max-width: 100%;
+  border-radius: 28px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  border: 0;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 0.02em;
+  box-shadow: 0px 0px 38px 0px rgba(255, 201, 88, 0.8);
+  transition: color 0.2s, background 0.2s, opacity 0.2s;
+}
+
+.btn:hover {
+  background: #fdbc34;
+}
+
+.btn:active {
+  opacity: 0.8;
+  transform: scale(0.95);
+}
+
+@media (max-width: 576px) {
+  .btn {
+    font-size: 16px;
+    padding: 16px 20px;
+    width: 220px;
+  }
+}
+/* btn end */
+
+/* btn-menu start */
+.btn-menu {
+  background: none;
+  border-radius: 0;
+  cursor: pointer;
+  display: inline-block;
+  padding: 15px;
+  border: 0;
+}
+
+.btn-menu__box {
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+
+.btn-menu__inner::before,
+.btn-menu__inner::after,
+.btn-menu__inner {
+  background: #817f6a;
+  width: 100%;
+  height: 4px;
+  border-radius: 5px;
+}
+
+.btn-menu__inner {
+  display: block;
+  top: 50%;
+  position: relative;
+}
+
+.btn-menu__inner::before,
+.btn-menu__inner::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.btn-menu__inner::before {
+  top: -10px;
+}
+
+.btn-menu__inner::after {
+  bottom: -10px;
+}
+/* btn-menu end */
+
+/* btn-close start */
+.btn-close {
+  position: relative;
+  border: none;
+  cursor: pointer;
+  background: none;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.btn-close:hover {
+  transform: scale(1.1);
+}
+
+.btn-close:active {
+  transform: scale(0.9);
+  opacity: 0.8;
+}
+
+.btn-close::before,
+.btn-close::after {
+  content: "";
+  background: #817f6a;
+  height: 40px;
+  width: 3px;
+  position: absolute;
+  border: 10px;
+  top: 50%;
+}
+
+.btn-close::before {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.btn-close::after {
+  transform: translateY(-50%) rotate(-45deg);
+}
+/* btn-close end */

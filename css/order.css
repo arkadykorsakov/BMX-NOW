@@ -1,0 +1,35 @@
+/* order start */
+.order {
+  max-width: 310px;
+  margin: 0 auto;
+}
+
+.order__img {
+  width: 186px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.order__title {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 0 5px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.order__subtitle {
+  margin: 0 0 30px;
+  font-family: "Montserrat", sans-serif;
+  color: #a2a2a2;
+  font-weight: 900;
+  text-align: center;
+}
+
+.order__size {
+  font-family: "Montserrat", sans-serif;
+  color: #a2a2a2;
+  font-weight: 900;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+/* order end */

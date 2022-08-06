@@ -1,0 +1,138 @@
+/* 
+font-family: 'Roboto', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+@import "accordion.css";
+@import "btn.css";
+@import "catalog.css";
+@import "footer.css";
+@import "form.css";
+@import "header-page.css";
+@import "nullstyle.css";
+@import "order.css";
+@import "popup.css";
+@import "product.css";
+@import "section-about.css";
+@import "section-contacts.css";
+@import "section-top.css";
+@import "work.css";
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.375;
+  background-color: #222221;
+  color: #fff;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+/* container start */
+.container {
+  padding: 0 20px;
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+/* container end */
+
+/* section start */
+.section {
+  padding: 110px 0;
+}
+
+.section__header {
+  margin-bottom: 90px;
+}
+
+@media (max-width: 576px) {
+  .section {
+    padding: 90px 0;
+  }
+
+  .section__header {
+    margin-bottom: 70px;
+  }
+}
+
+/* section end */
+
+/* page-title start */
+.page-title {
+  font-size: 48px;
+  text-align: center;
+  margin: 0 auto 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  color: #ffc958;
+}
+
+.section-about__title {
+  color: #222221;
+}
+
+@media (max-width: 576px) {
+  .page-title {
+    font-size: 36px;
+  }
+}
+/* page-title end */
+
+/* socials start */
+.socials {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.socials__item {
+  margin-right: 7px;
+}
+
+.socials__link {
+  display: inline-block;
+}
+
+.socials__icon {
+  fill: #817f6a;
+  width: 35px;
+  height: 35px;
+  transition: fill 0.2s, opacity 0.2s;
+}
+
+.socials__icon--vk:hover {
+  fill: #5078a5;
+}
+
+.socials__icon--fb:hover {
+  fill: #3e58a1;
+}
+
+.socials__icon--twitter:hover {
+  fill: #55acee;
+}
+
+.socials__icon:active {
+  opacity: 0.7;
+}
+
+.socials__logo {
+  fill: #fff;
+}
+
+@media (max-width: 767px) {
+  .socials__item {
+    margin-right: 15px;
+  }
+
+  .socials__icon {
+    width: 45px;
+    height: 45px;
+  }
+}
+/* socials end */
